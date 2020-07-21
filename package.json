@@ -19,6 +19,7 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
+    "glob": "^7.1.6",
     "prettier": "2.0.5"
   },
   "keywords": [
@@ -26,7 +27,7 @@
   ],
   "license": "0BSD",
   "scripts": {
-    "build": "gatsby build && node ./lib/scan.js",
+    "build": "gatsby build && node ./lib/build-size-scanner.js",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
